@@ -5,7 +5,7 @@ class Book:
         self.year = year
 
     def __del__(self):
-        print(f"Deleting {self.title}")  # Destructor: called when object is deleted
+        return(f"Deleting {self.title}")  # Destructor: called when object is deleted
 
     def __str__(self):
         return f"{self.title} by {self.author}, published in {self.year}"  # User-friendly string
