@@ -14,7 +14,8 @@ class Book:
         return f"Book('{self.title}', '{self.author}', {self.year})"  # Official string for debugging
 
 
-book = Book("1984", "George Orwell", 1949)
-print(book)            
-print(repr(book))      
-del book
+if __name__ == "__main__":
+    book = Book("1984", "George Orwell", 1949)
+    print(book)
+    print(repr(book))
+    del book
